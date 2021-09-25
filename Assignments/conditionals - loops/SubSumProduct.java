@@ -6,7 +6,24 @@ public class SubSumProduct {
 
     //    Subtract the Product and Sum of Digits of an Integer
 
+           Scanner sc = new Scanner(System.in);
 
+        int n = sc.nextInt();
+        int sum = 0;
+        int product = 1;
+
+        while(n != 0) {
+            int rem = n % 10;
+            sum += rem;
+            product *= rem;
+            n /= 10;
+
+        }
+        System.out.print(product - sum);
 
     }
 }
+
+
+
+    
