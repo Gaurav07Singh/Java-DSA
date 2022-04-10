@@ -20,7 +20,7 @@ public class LT_682 {
     }
     public static int calPoints(String[] ops) {
 
-        int[]arr = new int[1000];
+        int[]arr = new int[ops.length];
         int i=0;
 
         for(String s : ops){
